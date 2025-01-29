@@ -22,8 +22,16 @@ Three tokenization techniques were used:
 The data was split into **training (70%)** and **testing (30%)** sets. Each model was trained and evaluated using accuracy and other performance metrics.
 
 ## 📊 Results
-- BoW and TF-IDF performed well with Naive Bayes.
-- Word Embeddings combined with Logistic Regression provided promising results.
+### Model Performance on Test Data
+| Vectorization Method  | Classifier               | Accuracy  |
+|----------------------|-------------------------|----------|
+| **Bag of Words (BoW)**  | Multinomial Naive Bayes | 82.6%    |
+| **TF-IDF**             | Multinomial Naive Bayes | 83.3%    |
+| **Word Embeddings**    | Logistic Regression     | 79.1%    |
+
+- BoW and TF-IDF performed similarly well with Multinomial Naive Bayes.  
+- Word Embeddings were used with Logistic Regression due to computational limitations. While the accuracy is reasonable (79.1%), better performance is expected with neural networks, as they are more compatible with Word Embeddings.  
+
 
 ## 🚀 How to Run the Project
 ### Requirements:
